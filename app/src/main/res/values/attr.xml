@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text to display.
+    <attr name="text" format="string" localization="suggested" />-->
+    <!--<attr name="titleText" format="integer" />-->
+    <!-- Sets a drawable as the content of this ImageView. -->
+    <!--<attr name="src" format="reference|color" />-->
+    <!--<attr name="singleLine" format="boolean" />-->
+    <!--<attr name="textColor" format="reference|color" />-->
+
+    <declare-styleable name="TitleBar">
+        <attr name="titleText" format="string" />
+        <attr name="titleIcon" format="reference|color" />
+        <attr name="leftText" format="string" />
+        <attr name="leftIcon" format="reference|color" />
+        <attr name="leftSubText" format="string" />
+        <attr name="leftSubIcon" format="reference|color" />
+        <attr name="rightText" format="string" />
+        <attr name="rightIcon" format="reference|color" />
+        <attr name="rightSubText" format="string" />
+        <attr name="rightSubIcon" format="reference|color" />
+        <attr name="backgroundColor" format="reference|color"/>
+
+        <attr name="showLine" format="boolean"/>
+        <attr name="lineColorbg" format="reference|color"/>
+
+
+        <attr name="titleTextSize" format="dimension"/>
+        <attr name="leftTextSize" format="dimension"/>
+        <attr name="leftSubTextSize" format="dimension"/>
+        <attr name="rightTextSize" format="dimension"/>
+        <attr name="rightSubTextSize" format="dimension"/>
+
+        <attr name="titletextColor" format="reference|color"/>
+        <attr name="leftTextColor" format="reference|color"/>
+        <attr name="leftSubTextColor" format="reference|color"/>
+        <attr name="rightTextColor" format="reference|color"/>
+        <attr name="rightSubTextColor" format="reference|color"/>
+
+
+    </declare-styleable>
+</resources>
