@@ -15,7 +15,6 @@ Step 2. Add the dependency
 ```
 dependencies {
 
-
     implementation 'com.github.siinax:titlebar:v0.0.3'
 
 }
