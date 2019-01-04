@@ -133,11 +133,11 @@ public class TitleBar extends RelativeLayout implements View.OnClickListener {
             title_tv.setVisibility(VISIBLE);
             title_tv.setText(titleText);
         }
-        title_tv.setTextColor(titletextColor == null ? ColorStateList.valueOf(0xFF000000) : titletextColor);
+        title_tv.setTextColor(titletextColor == null ? ColorStateList.valueOf(0xFFFFFFFF) : titletextColor);
 
 
         left_tv = (TextView) findViewById(R.id.left_tv);
-        left_tv.setTextColor(leftTextColor == null ? ColorStateList.valueOf(0xFF000000) : leftTextColor);
+        left_tv.setTextColor(leftTextColor == null ? ColorStateList.valueOf(0xFFFFFFFF) : leftTextColor);
         setIconandText(context, left_tv, leftIcon, leftText, TitleBarUtils.left);
         /*if (leftIcon != null) {
             left_tv.setVisibility(VISIBLE);
@@ -152,7 +152,7 @@ public class TitleBar extends RelativeLayout implements View.OnClickListener {
         }*/
 
         right_tv = (TextView) findViewById(R.id.right_tv);
-        right_tv.setTextColor(rightTextColor == null ? ColorStateList.valueOf(0xFF000000) : rightTextColor);
+        right_tv.setTextColor(rightTextColor == null ? ColorStateList.valueOf(0xFFFFFFFF) : rightTextColor);
         setIconandText(context, right_tv, rightIcon, rightText, TitleBarUtils.right);
         /*if (rightIcon != null) {
             right_tv.setVisibility(VISIBLE);
@@ -165,7 +165,7 @@ public class TitleBar extends RelativeLayout implements View.OnClickListener {
         }*/
 
         left_subtv = (TextView) findViewById(R.id.left_subtv);
-        left_subtv.setTextColor(leftSubTextColor == null ? ColorStateList.valueOf(0xFF000000) : leftSubTextColor);
+        left_subtv.setTextColor(leftSubTextColor == null ? ColorStateList.valueOf(0xFFFFFFFF) : leftSubTextColor);
         setIconandText(context, left_subtv, leftSubIcon, leftSubText, TitleBarUtils.left);
         /*if (leftSubIcon != null) {
             left_subtv.setVisibility(VISIBLE);
@@ -178,7 +178,7 @@ public class TitleBar extends RelativeLayout implements View.OnClickListener {
         }*/
 
         right_subtv = (TextView) findViewById(R.id.right_subtv);
-        right_subtv.setTextColor(rightSubTextColor == null ? ColorStateList.valueOf(0xFF000000) : rightSubTextColor);
+        right_subtv.setTextColor(rightSubTextColor == null ? ColorStateList.valueOf(0xFFFFFFFF) : rightSubTextColor);
         setIconandText(context, right_subtv, rightSubIcon, rightSubText, TitleBarUtils.left);
         /*if (rightSubIcon != null) {
             right_subtv.setVisibility(VISIBLE);
@@ -261,7 +261,7 @@ public class TitleBar extends RelativeLayout implements View.OnClickListener {
     private void setIconandText(Context context, TextView textView, Drawable icon, CharSequence text,int type){
         if (icon != null) {
             textView.setVisibility(VISIBLE);
-            TitleBarUtils.addDrawableText(context, left_tv, icon, type);
+            TitleBarUtils.addDrawableText(context, textView, icon, type);
         }
         if (!TextUtils.isEmpty(text)) {
             textView.setVisibility(VISIBLE);
