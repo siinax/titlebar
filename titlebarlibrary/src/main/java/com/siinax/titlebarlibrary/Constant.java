@@ -1,4 +1,4 @@
-package com.siinax.titlebar;
+package com.siinax.titlebarlibrary;
 
 /**
  * Created by siinax on 2018/12/2.今天是充满希望的一天!! w(ﾟДﾟ)w (╯°Д°)╯︵ ┻━┻

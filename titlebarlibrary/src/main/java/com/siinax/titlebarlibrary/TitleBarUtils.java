@@ -1,4 +1,4 @@
-package com.siinax.titlebar;
+package com.siinax.titlebarlibrary;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;

@@ -1,4 +1,4 @@
-package com.siinax.titlebar;
+package com.siinax.titlebarlibrary;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -14,8 +14,6 @@ import android.view.View;
 import android.view.ViewOutlineProvider;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import javax.xml.validation.Validator;
 
 
 /**
@@ -220,42 +218,42 @@ public class TitleBar extends RelativeLayout implements View.OnClickListener {
         }
 
         tempview = v.getId();
-        switch (v.getId()) {
-            case R.id.left_tv:
-                if (left_tv.getVisibility() == VISIBLE) {
-                    if (listener != null) {
-                        listener.onLeftclick();
-                    }
-                    if (leftlistener != null) {
-                        leftlistener.onLeftclick();
-                    }
-                    if (Lrlistener != null) {
-                        Lrlistener.onLeftclick();
-                    }
+        int i = v.getId();
+        if (i == R.id.left_tv) {
+            if (left_tv.getVisibility() == VISIBLE) {
+                if (listener != null) {
+                    listener.onLeftclick();
+                }
+                if (leftlistener != null) {
+                    leftlistener.onLeftclick();
+                }
+                if (Lrlistener != null) {
+                    Lrlistener.onLeftclick();
+                }
 
+            }
+
+        } else if (i == R.id.left_subtv) {
+            if (left_subtv.getVisibility() == VISIBLE) {
+                if (listener != null)
+                    listener.onLeftSubclick();
+            }
+
+        } else if (i == R.id.right_tv) {
+            if (right_tv.getVisibility() == VISIBLE) {
+                if (listener != null)
+                    listener.onRightclick(v);
+                if (Lrlistener != null) {
+                    Lrlistener.onRightclick();
                 }
-                break;
-            case R.id.left_subtv:
-                if (left_subtv.getVisibility() == VISIBLE) {
-                    if (listener != null)
-                        listener.onLeftSubclick();
-                }
-                break;
-            case R.id.right_tv:
-                if (right_tv.getVisibility() == VISIBLE) {
-                    if (listener != null)
-                        listener.onRightclick(v);
-                    if (Lrlistener != null) {
-                        Lrlistener.onRightclick();
-                    }
-                }
-                break;
-            case R.id.right_subtv:
-                if (right_subtv.getVisibility() == VISIBLE) {
-                    if (listener != null)
-                        listener.onRightSubclick();
-                }
-                break;
+            }
+
+        } else if (i == R.id.right_subtv) {
+            if (right_subtv.getVisibility() == VISIBLE) {
+                if (listener != null)
+                    listener.onRightSubclick();
+            }
+
         }
     }
 
