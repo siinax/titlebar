@@ -3,6 +3,7 @@ this is titlebar
 ====
 [![](https://www.jitpack.io/v/siinax/titlebar.svg)](https://www.jitpack.io/#siinax/titlebar)
 
+
 Setup 1.Add it in your root build.gradle at the end of repositories:
 ```
 allprojects {
