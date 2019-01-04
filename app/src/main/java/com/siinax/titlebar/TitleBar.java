@@ -385,6 +385,4 @@ public class TitleBar extends RelativeLayout implements View.OnClickListener {
         void onRightclick();
     }
 
-
-
 }
