@@ -86,6 +86,7 @@ public class TitleBar extends RelativeLayout implements View.OnClickListener {
 
 
         Drawable leftIcon = typedArray.getDrawable(R.styleable.TitleBar_leftIcon);
+        Drawable lineColorbg = typedArray.getDrawable(R.styleable.TitleBar_lineColorbg);
 
         Drawable leftSubIcon = typedArray.getDrawable(R.styleable.TitleBar_leftSubIcon);
         Drawable titleIcon = typedArray.getDrawable(R.styleable.TitleBar_titleIcon);
@@ -192,6 +193,9 @@ public class TitleBar extends RelativeLayout implements View.OnClickListener {
         }*/
         bottom_line = findViewById(R.id.bottom_line);
         bottom_line.setVisibility(showLine ? VISIBLE : GONE);
+        if (lineColorbg != null) {
+            bottom_line.setBackground(lineColorbg);
+        }
 
 
         left_tv.setOnClickListener(this);
