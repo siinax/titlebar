@@ -2,6 +2,7 @@
 this is titlebar
 ====
 [![](https://www.jitpack.io/v/siinax/titlebar.svg)](https://www.jitpack.io/#siinax/titlebar)
+
 Setup 1.Add it in your root build.gradle at the end of repositories:
 ```
 allprojects {
@@ -17,7 +18,7 @@ Step 2. Add the dependency
 dependencies {
 
 
-    implementation 'com.github.siinax:titlebar:v0.01'
+    implementation 'com.github.siinax:titlebar:Tag'
 
 }
 ```
