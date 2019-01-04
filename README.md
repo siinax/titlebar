@@ -1,5 +1,5 @@
 # titlebar
-this is titlebar  [![](https://www.jitpack.io/v/siinax/titlebar.svg)](https://www.jitpack.io/#siinax/titlebar)
+#this is titlebar  [![](https://www.jitpack.io/v/siinax/titlebar.svg)](https://www.jitpack.io/#siinax/titlebar)
 
 ====
 
@@ -18,7 +18,7 @@ Step 2. Add the dependency
 dependencies {
 
 
-    implementation 'com.github.siinax:titlebar:v0.0.2'
+    implementation 'com.github.siinax:titlebar:v0.0.3'
 
 }
 ```
